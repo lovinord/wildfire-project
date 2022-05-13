@@ -39,6 +39,7 @@ const Horizon = () => {
     }
     // eslint-disable-next-line
   }, []);
+
   const One = getTreeComponent(TreeOneSvg, DeadTreeOneSvg);
   const Two = getTreeComponent(TreeTwoSvg, DeadTreeTwoSvg);
   const Three = getTreeComponent(TreeThreeSvg, DeadTreeThreeSvg);
@@ -112,8 +113,6 @@ const Container = styled.div`
       : props.lessThanOneDayLeft === true
       ? "#FFA11B"
       : "#F7FFD8"};
-  height: 100%;
-  width: 100%;
 `;
 
 const Sky = styled.div`
@@ -123,7 +122,7 @@ const Sky = styled.div`
 const RowWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: relative;
   bottom: 1;
@@ -169,11 +168,11 @@ const RowThree = styled(RowOne)`
   max-height: 650px;
 
   @media (min-width: 768px) {
-    max-height: 750px;
+    max-height: 730px;
   }
 
   @media (min-width: 1024px) {
-    max-height: 720px;
+    max-height: 700px;
   }
 `;
 
@@ -184,7 +183,7 @@ const RowOneGround = styled.div`
       : props.lessThanOneDayLeft === true
       ? "#E27710"
       : "#96B984"};
-  height: 700px;
+  height: 320px;
 `;
 
 const RowTwoGround = styled(RowOneGround)`
@@ -194,7 +193,7 @@ const RowTwoGround = styled(RowOneGround)`
       : props.lessThanOneDayLeft === true
       ? "#9E3B1B"
       : "#589362"};
-  height: 600px;
+  height: 300px;
 `;
 
 const RowThreeGround = styled(RowOneGround)`
@@ -204,7 +203,7 @@ const RowThreeGround = styled(RowOneGround)`
       : props.lessThanOneDayLeft === true
       ? "#5E1816"
       : "#193326"};
-  height: 400px;
+  height: 250px;
 
   @media (min-width: 768px) {
     height: 300px;

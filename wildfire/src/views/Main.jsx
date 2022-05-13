@@ -62,7 +62,7 @@ const SideNav = styled.div`
   height: 100%;
   width: ${(props) => (props.toggleNavbar ? "100%" : "0%")};
   position: fixed;
-  z-index: 1000;
+  z-index: 10000;
   top: 0;
   right: 0;
   background: #ffb218;
@@ -89,7 +89,7 @@ const MenuButton = styled.button`
   visibility: ${(props) => (props.toggleNavbar ? "hidden" : "visible")};
   opacity: ${(props) => (props.toggleNavbar ? "0" : "1")};
   transition: visibility 0.2s, opacity 1.2s linear;
-  z-index: 2;
+  z-index: 1000;
   top: 15px;
   right: 25px;
   font-size: 36px;
