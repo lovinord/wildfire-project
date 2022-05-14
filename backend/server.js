@@ -42,7 +42,7 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => {
-    console.log("MongoDB Connected...");
+    console.log("MongoogogoDB Connected...");
   })
   .catch((err) => {
     console.log(err);
@@ -53,6 +53,6 @@ app.use("/api/user", userRoutes);
 app.use("/api/task", taskRoutes);
 app.use("/api/tree", treeRoutes);
 
-app.listen(port, function () {
-  console.log("CORS-enabled web server listening on port");
+app.listen(process.env.PORT || 3001, function () {
+  console.log("CORS-enabled web server is listening.");
 });
