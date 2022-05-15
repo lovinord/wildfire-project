@@ -1,7 +1,7 @@
 import { createContext, useEffect, useState } from "react";
 export const UserContext = createContext();
 
-const BACKEND_API = process.env.BACKEND_API | "http://localhost:3001";
+const BACKEND_API = process.env.BACKEND_API || "http://localhost:3001";
 
 const UserContextProvider = (props) => {
   const [loggedInUser, setLoggedInUser] = useState();
