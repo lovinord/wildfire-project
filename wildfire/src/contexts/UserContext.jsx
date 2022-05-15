@@ -10,7 +10,7 @@ const UserContextProvider = (props) => {
   const baseURL = `${BACKEND_API}/api/user`;
 
   useEffect(() => {
-    whoami();
+    //whoami();
     // eslint-disable-next-line
   }, []);
 
@@ -34,7 +34,8 @@ const UserContextProvider = (props) => {
       body: JSON.stringify(logInUser),
     });
     result = await result.json();
-    await whoami();
+    setLoggedInUser(result.loggedInUser);
+    //await whoami();
     return result;
   };
 
@@ -47,7 +48,7 @@ const UserContextProvider = (props) => {
       },
     });
     await logout.json();
-    await whoami();
+    //await whoami();
   };
 
   const signup = async (createdUser) => {
