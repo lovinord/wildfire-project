@@ -28,7 +28,7 @@ app.use(
 app.use(
   session({
     name: "Wildfire",
-    keys=['key1','key2']
+    keys: ["key1", "key2"],
   })
 );
 
