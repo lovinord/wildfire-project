@@ -48,6 +48,7 @@ const UserContextProvider = (props) => {
       },
     });
     await logout.json();
+    setLoggedInUser();
     //await whoami();
   };
 
