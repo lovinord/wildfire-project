@@ -27,11 +27,8 @@ app.use(
 
 app.use(
   session({
-    name: "Ballerina",
-    secret: "Let's all go to the movies",
-    resave: false,
-    saveUninitialized: true,
-    cookie: { maxAge: 8 * 60 * 60 * 1000 },
+    name: "Wildfire",
+    keys=['key1','key2']
   })
 );
 
