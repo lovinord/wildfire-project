@@ -1,11 +1,14 @@
 import { createContext, useState } from "react";
 export const TaskContext = createContext();
 
+const BACKEND_API = process.env.BACKEND_API | "http://localhost:3001";
+
 const TaskContextProvider = (props) => {
   const [userActiveTasks, setUserActiveTasks] = useState();
   const [userOldTasks, setUserOldTasks] = useState();
 
-  const baseURL = "http://localhost:3001/api/task";
+  const baseURL = `${BACKEND_API}/api/task`;
+
   const resetTaskContext = () => {
     setUserOldTasks(null);
     setUserActiveTasks(null);

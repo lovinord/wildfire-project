@@ -1,11 +1,13 @@
 import { createContext, useEffect, useState } from "react";
 export const UserContext = createContext();
 
+const BACKEND_API = process.env.BACKEND_API | "http://localhost:3001";
+
 const UserContextProvider = (props) => {
   const [loggedInUser, setLoggedInUser] = useState();
   const [showModal, setShowModal] = useState(false);
 
-  const baseURL = "http://localhost:3001/api/user";
+  const baseURL = `${BACKEND_API}/api/user`;
 
   useEffect(() => {
     whoami();
