@@ -1,7 +1,7 @@
 import { createContext, useState } from "react";
 
 export const TreeContext = createContext();
-const BACKEND_API = process.env.BACKEND_API;
+const BACKEND_API = "https://wildfire-project.herokuapp.com";
 
 const TreeContextProvider = (props) => {
   const [deadTree, setDeadTree] = useState([]);

@@ -1,7 +1,7 @@
 import { createContext, useState } from "react";
 export const TaskContext = createContext();
 
-const BACKEND_API = process.env.BACKEND_API;
+const BACKEND_API = "https://wildfire-project.herokuapp.com";
 
 const TaskContextProvider = (props) => {
   const [userActiveTasks, setUserActiveTasks] = useState();

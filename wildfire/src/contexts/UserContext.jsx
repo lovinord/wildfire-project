@@ -1,7 +1,7 @@
 import { createContext, useEffect, useState } from "react";
 export const UserContext = createContext();
 
-const BACKEND_API = process.env.BACKEND_API;
+const BACKEND_API = "https://wildfire-project.herokuapp.com";
 
 const UserContextProvider = (props) => {
   const [loggedInUser, setLoggedInUser] = useState();
