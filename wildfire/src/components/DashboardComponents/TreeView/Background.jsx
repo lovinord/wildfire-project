@@ -206,7 +206,7 @@ const RowThreeGround = styled(RowOneGround)`
   height: 250px;
 
   @media (min-width: 768px) {
-    height: 300px;
+    height: 230px;
   }
 
   @media (min-width: 1024px) {
@@ -420,42 +420,3 @@ const TreeWrapperThree = styled(TreeWrapperOne)`
   }
 `;
 
-/* const TreeOne = styled(TreeOneSvg)`
-  width: 100px;
-  height: 100px;
-  > g {
-    fill: red;
-  }
-`;
-
-const TreeTwo = styled(TreeTwoSvg)`
-  width: 200px;
-  height: 100px;
-  > g {
-    fill: red;
-  }
-`;
-
-const TreeThree = styled(TreeThreeSvg)`
-  width: 100px;
-  height: 100px;
-  > g {
-    fill: red;
-  }
-`;
-
-const TreeFour = styled(TreeFourSvg)`
-  width: 100px;
-  height: 100px;
-  > g {
-    fill: red;
-  }
-`;
-
-const TreeFive = styled(TreeFiveSvg)`
-  width: 100px;
-  height: 100px;
-  > g {
-    fill: red;
-  }
-`; */
