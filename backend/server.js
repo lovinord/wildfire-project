@@ -50,6 +50,6 @@ app.use("/api/user", userRoutes);
 app.use("/api/task", taskRoutes);
 app.use("/api/tree", treeRoutes);
 
-app.listen(process.env.PORT || 3001, function () {
+app.listen(/* process.env.PORT || */ 3001, function () {
   console.log("CORS-enabled web server is listening.");
 });
